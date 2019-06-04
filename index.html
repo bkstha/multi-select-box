@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        ul {
+            border: 1px solid black;
+            width: 300px;
+            height: 30px;
+            /*padding: 10px;*/
+            margin: 10px;
+        }
+
+        li {
+            border: 1px solid black;
+            list-style: none;
+            float: left;
+            margin-right: 10px;
+            padding: 3px;
+
+        }
+
+        .bs-cross {
+            margin-right: 4px;
+        }
+
+        #select-multiple {
+            width: 100px;
+            height: 300px;
+        }
+
+        #main-span ul li .cross {
+            border: 1px solid red;
+            /*padding: 5px;*/
+        }
+
+        .active-select {
+            /*background-color: gray;*/
+            background: #DCDCDC !important;
+            /*color: white;*/
+        }
+    </style>
+</head>
+<body>
+<form action="index.html" method="post">
+    <select name="select-multiple" multiple id="select-multiple">
+        <option value="1" selected>one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+        <option value="4" selected>four</option>
+        <option value="5">five</option>
+        <option value="6">six</option>
+    </select>
+
+    <button type="submit">submit</button>
+</form>
+
+<!--    <span id="main-span">-->
+<!--        <ul id="selected-list">-->
+
+<!--        </ul>-->
+<!--    </span>-->
+
+<script src="select-multiple.js"></script>
+</body>
+</html>
